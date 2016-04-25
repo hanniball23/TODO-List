@@ -7,11 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>TODO</title>
 
-    <!-- Bootstrap
-    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../jquery/dist/jquery.min.js"></script>
-    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>-->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
@@ -31,68 +26,89 @@
     <![endif]-->
   </head>
   <body>
+
+    <!-- Open Container zum Wrappen -->
     <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">TODO-List</div>
-      <div class="panel-body">
-        <button type="butten" class="btn btn-default">
-          <span class="glyphicon glyphicon-plus"></span>
-          Add
-        </button>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Task</th>
-              <th>Date</th>
-              <th>Done</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>test1</td>
-              <td>30.05.2016</td>
-              <td>0%</td>
-              <td>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-remove"></span>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>test2 test2 test2</td>
-              <td>25.05.2016</td>
-              <td>0%</td>
-              <td>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-remove"></span>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>test3 test3 test3 test3 test3</td>
-              <td>15.05.2016</td>
-              <td>0%</td>
-              <td>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-remove"></span>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+      <!-- TODO-List Wrappen -->
+      <div class="panel panel-default">
+        <!-- Header TODO-List  -->
+        <div class="panel-heading">TODO-List</div>
+
+        <!-- Body with Tasks -->
+        <div class="panel-body">
+
+          <!-- Add Button -->
+          <a href="add.htm" class="btn btn-default" title="add new Task">
+            <span class="glyphicon glyphicon-plus"></span>
+            Add
+          </a>
+
+          <!-- Table with Task and details -->
+          <table class="table table-hover">
+            
+            <!-- Header legend  -->
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Done</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <!-- Task with description -->
+            <tbody>
+              <tr>
+                <td>test1</td>
+                <td>30.05.2016</td>
+                <td>0%</td>
+                <td>
+                  <!-- Buttons Delete and Edit -->
+                  <button type="button" class="btn btn-default" title="edit">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </button>
+                  <button type="button" class="btn btn-default" title ="remove">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>test2 test2 test2</td>
+                <td>25.05.2016</td>
+                <td>0%</td>
+                <td>
+                  <button type="button" class="btn btn-default" title="edit">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </button>
+                  <button type="button" class="btn btn-default" title="remove">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>test3 test3 test3 test3 test3</td>
+                <td>15.05.2016</td>
+                <td>0%</td>
+                <td>
+                  <button type="button" class="btn btn-default" title="edit">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </button>
+                  <button type="button" class="btn btn-default" titel="remove">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
       </div>
+
+      <!-- Link to impressum -->
+      <a href="./impressum.htm" role="button" class="btn btn-default">Impressum</a>
     </div>
-    <button type="button" class="btn btn-link">Impressum</button>
-  </div>
+
   </body>
 </html>
